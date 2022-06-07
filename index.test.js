@@ -1,4 +1,4 @@
-const strFunctions = require('./index');
+const strFunctions = require('./index.js');
 
 test('test string length', () => {
   expect(strFunctions.stringLength('Felix')).toBe(5);

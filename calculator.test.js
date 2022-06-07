@@ -1,4 +1,4 @@
-const Calculator = require('./calculator');
+const Calculator = require('./calculator.js');
 
 describe('add', () => {
   test('add 2 + 2', () => {
@@ -46,11 +46,11 @@ describe('divide', () => {
   test('divide 20 / 0', () => {
     expect(Calculator.divide(20, 0)).toBe('Divide by zero error');
   });
- 
+
   test('divide -25 / -10', () => {
     expect(Calculator.divide(-25, -10)).toBe(2.5);
   });
- 
+
   test('divide 0 / 2.5', () => {
     expect(Calculator.divide(0, 2.5)).toBe(0);
   });
